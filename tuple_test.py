@@ -28,3 +28,5 @@ for car in cars:
     else:
         print(car.title())
 
+if 'AUDI' in [car.upper() for car in cars]:
+    print('True')
