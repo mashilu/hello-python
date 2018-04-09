@@ -41,3 +41,23 @@ user_0 = {
 for k, v in user_0.items():
     print("\nKEY: " + k)
     print("\nVALUE: " + v)
+
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+}
+
+for name in favorite_languages.keys():
+    print(name.title())
+
+for name in sorted(favorite_languages.keys()):
+    print(name.title())
+
+print("=====The following languages have been mentioned: ")
+for language in favorite_languages.values():
+    print(language.title())
+
+for language in set(favorite_languages.values()):
+    print(language.title())
